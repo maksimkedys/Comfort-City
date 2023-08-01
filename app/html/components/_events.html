@@ -1,0 +1,74 @@
+<section class="events" id="events">
+  <div class="container">
+    <div class="events__top">
+      <h2 class="events__title title">
+        In the course of events
+      </h2>
+      <div class="events__arrows">
+        <button class="events__arrow events__arrow--prev" type="button">
+          <svg class="events__arrow-icon events__arrow-icon--prev" width="20" height="20">
+            <use href="images/sprite.svg#icon-chevron"></use>
+          </svg>
+        </button>
+        <button class="events__arrow events__arrow--next" type="button">
+          <svg class="events__arrow-icon" width="20" height="20">
+            <use href="images/sprite.svg#icon-chevron"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="events__content swiper">
+      <ul class="events__list swiper-wrapper">
+        <li class="events__item swiper-slide">
+          @include('_advertisement-card.html', {
+          "url": "images/advertisement/1.jpg",
+          "title1": "The delivery of buildings of the 3rd phase in February 2023",
+          "title2": "is postponed to April2023 in connection with...",
+          "date": "04.01.2023"
+          })
+        </li>
+        <li class="events__item swiper-slide">
+          @include('_advertisement-card.html', {
+          "url": "images/advertisement/2.jpg",
+          "title1": "Huge discounts on housing! Get your apartment now.",
+          "title2": "You just need to bring the necessary documents and...",
+          "date": "03.01.2023"
+          })
+        </li>
+        <li class="events__item swiper-slide">
+          @include('_advertisement-card.html', {
+          "url": "images/advertisement/3.jpg",
+          "title1": "Huge discounts on housing! Get your apartment now.",
+          "title2": "Huge discounts on housing! Get your apartment now.",
+          "date": "04.01.2023"
+          })
+        </li>
+        <li class="events__item swiper-slide">
+          @include('_advertisement-card.html', {
+          "url": "images/advertisement/1.jpg",
+          "title1": "The delivery of buildings of the 3rd phase in February 2023",
+          "title2": "is postponed to April2023 in connection with...",
+          "date": "04.01.2023"
+          })
+        </li>
+        <li class="events__item swiper-slide">
+          @include('_advertisement-card.html', {
+          "url": "images/advertisement/2.jpg",
+          "title1": "Huge discounts on housing! Get your apartment now.",
+          "title2": "You just need to bring the necessary documents and...",
+          "date": "03.01.2023"
+          })
+        </li>
+        <li class="events__item swiper-slide">
+          @include('_advertisement-card.html', {
+          "url": "images/advertisement/3.jpg",
+          "title1": "Huge discounts on housing! Get your apartment now.",
+          "title2": "Huge discounts on housing! Get your apartment now.",
+          "date": "04.01.2023"
+          })
+        </li>
+      </ul>
+      <div class="pagination"></div>
+    </div>
+  </div>
+</section>

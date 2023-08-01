@@ -101,3 +101,102 @@ body {
     opacity: 0.5;
   }
 }
+
+.btn {
+  padding: 15px 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition:
+    border-color 0.4s,
+    color 0.4s,
+    background-color 0.4s,
+    opacity 0.4s;
+
+  &:focus {
+    border-color: $accent;
+  }
+  &:hover {
+    background-color: $dark;
+    border-color: $accent;
+    color: $accent;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+
+  @include r($sm) {
+    font-size: 14px;
+  }
+
+  &--dark {
+    background-color: $dark;
+    color: $lite;
+  }
+  &--lite {
+    background-color: $lite;
+    color: $dark;
+  }
+  &--outline {
+    border-color: $lite;
+    color: $lite;
+  }
+  &--dark-outline {
+    border-color: $dark;
+    color: $dark;
+  }
+}
+
+.view-more {
+  height: 44px;
+  display: inline-block;
+  padding: 10px 0 10px 55px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  transition:
+    background-color 0.4s,
+    border-color 0.4s,
+    color 0.4s;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $dark;
+    border-radius: 50%;
+    transition: background-color 0.4s;
+  }
+  &:focus {
+    border-color: $dark;
+  }
+  &:hover {
+    background-color: $dark;
+    color: $lite;
+    .view-more__icon {
+      fill: $dark;
+    }
+    &::before {
+      background-color: $lite;
+    }
+  }
+  &:active {
+    opacity: 0.7;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 10px;
+    fill: $lite;
+    transition: fill 0.4s;
+  }
+}

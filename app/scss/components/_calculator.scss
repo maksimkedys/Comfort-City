@@ -137,50 +137,8 @@
     }
   }
   &__btn {
-    padding: 15px 25px;
-    font-weight: 700;
-    border-radius: 10px;
-    letter-spacing: 1.26px;
-    text-transform: uppercase;
-    transition:
-      border-color 0.4s,
-      outline 0.4s,
-      color 0.4s,
-      background-color 0.4s,
-      opacity 0.4s;
-
     @include r($md) {
       font-size: 14px;
-    }
-
-    &--submit {
-      background-color: $lite;
-      color: $dark;
-      &:focus {
-        outline: 2px solid $accent;
-      }
-      &:hover {
-        outline: 2px solid $accent;
-        color: $accent;
-        background-color: $dark;
-      }
-      &:active {
-        opacity: 0.7;
-      }
-    }
-    &--order {
-      color: $lite;
-      border: 2px solid $lite;
-      &:focus {
-        border-color: $accent;
-      }
-      &:hover {
-        border-color: $accent;
-        color: $accent;
-      }
-      &:active {
-        opacity: 0.7;
-      }
     }
   }
   &__text {

@@ -1,0 +1,82 @@
+.events {
+  padding: 120px 0;
+  @include r($lg) {
+    padding: 80px 0;
+  }
+  @include r($sm) {
+    padding: 50px 0;
+  }
+  &__top {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    @include r($sm) {
+      margin-bottom: 30px;
+    }
+  }
+  &__arrows {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__arrow {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-color: $dark;
+    border-radius: 50%;
+    @include r($sm) {
+      display: none;
+    }
+  }
+  &__arrow-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $lite;
+    &--prev {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+  }
+  &__item {
+    height: 273px;
+    box-sizing: border-box;
+  }
+  .advertisement {
+    max-width: 415px;
+    width: fit-content;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .pagination {
+    margin-top: 30px;
+    justify-content: center;
+    gap: 15px;
+    display: none;
+
+    @include r($sm) {
+      display: flex;
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    background-color: $dark;
+    border-radius: 50%;
+    opacity: 1;
+
+    &-active {
+      background-color: $accent;
+      border: 2px solid $dark;
+    }
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+  }
+}

@@ -23,10 +23,10 @@
         <a class="menu__link link" href="#calculator">Hypothec</a>
       </li>
       <li class="menu__item">
-        <a class="menu__link link" href="#">Developer</a>
+        <a class="menu__link link" href="#events">Events</a>
       </li>
       <li class="menu__item">
-        <a class="menu__link link" href="#">Choose an apartment</a>
+        <a class="menu__link link" href="#popular">Choose an apartment</a>
       </li>
       <li class="menu__item">
         <a class="menu__link link" href="#mortgage">Partners</a>
@@ -45,7 +45,7 @@
         </a>
       </li>
       <li class="menu__contacts-item">
-        <a class="menu__contacts-link link menu__contacts-link--apartment" href="#apartaments">
+        <a class="menu__contacts-link link menu__contacts-link--apartment" href="#popular">
           Apartment selection
           <svg class="menu__contacts-icon" width="9" height="18">
             <use href="images/sprite.svg#icon-chevron"></use>
@@ -76,9 +76,10 @@
   </div>
   <div class="proposals">
     <article class="advertisement" style="background-image: url('images/advertisement/1.jpg');">
-  <p class="advertisement__title">
-    The delivery of buildings of the 3rd phase in February 2023 is postponed to April2023
-  </p>
+  <h3 class="advertisement__title">
+    The delivery of buildings of the 3rd phase in February 2023
+    is postponed to April2023 in connection with...
+  </h3>
   <time class="advertisement__date" datetime="04.01.2023">04.01.2023</time>
   <button class="advertisement__btn" type="button">
     <svg class="advertisement__icon" width="9" height="18">
@@ -88,9 +89,10 @@
   </button>
 </article>
     <article class="advertisement" style="background-image: url('images/advertisement/2.jpg');">
-  <p class="advertisement__title">
-    Huge discounts on housing! Get your apartment now. You just need to bring the necessary documents and...
-  </p>
+  <h3 class="advertisement__title">
+    Huge discounts on housing! Get your apartment now.
+    You just need to bring the necessary documents and...
+  </h3>
   <time class="advertisement__date" datetime="03.01.2023">03.01.2023</time>
   <button class="advertisement__btn" type="button">
     <svg class="advertisement__icon" width="9" height="18">
@@ -100,9 +102,10 @@
   </button>
 </article>
     <article class="advertisement" style="background-image: url('images/advertisement/3.jpg');">
-  <p class="advertisement__title">
-    Huge discounts on housing! Get your apartment now. You just need to bring the necessary documents and...
-  </p>
+  <h3 class="advertisement__title">
+    Huge discounts on housing! Get your apartment now.
+    Huge discounts on housing! Get your apartment now.
+  </h3>
   <time class="advertisement__date" datetime="04.01.2023">04.01.2023</time>
   <button class="advertisement__btn" type="button">
     <svg class="advertisement__icon" width="9" height="18">
@@ -143,8 +146,8 @@
               </p>
             </div>
             <div class="apartaments-card__box">
-              <a class="apartaments-card__link" href="#">
-                <svg class="apartaments-card__icon" width="20" height="20">
+              <a class="view-more" href="#">
+                <svg class="view-more__icon" width="20" height="20">
                   <use href="images/sprite.svg#icon-chevron"></use>
                 </svg>
                 View apartments
@@ -166,7 +169,7 @@
           <div class="apartaments-card__content">
             <div class="apartaments-card__box">
               <h3 class="apartaments-card__title">
-                Zelenogradsk pr. 4
+                Lisove s. 60
               </h3>
               <p class="apartaments-card__desc">
                 I quarter of 2022
@@ -176,8 +179,8 @@
               </p>
             </div>
             <div class="apartaments-card__box">
-              <a class="apartaments-card__link" href="#">
-                <svg class="apartaments-card__icon" width="20" height="20">
+              <a class="view-more" href="#">
+                <svg class="view-more__icon" width="20" height="20">
                   <use href="images/sprite.svg#icon-chevron"></use>
                 </svg>
                 View apartments
@@ -208,8 +211,8 @@
               </p>
             </div>
             <div class="apartaments-card__box">
-              <a class="apartaments-card__link" href="#">
-                <svg class="apartaments-card__icon" width="20" height="20">
+              <a class="view-more" href="#">
+                <svg class="view-more__icon" width="20" height="20">
                   <use href="images/sprite.svg#icon-chevron"></use>
                 </svg>
                 View apartments
@@ -241,8 +244,8 @@
               </p>
             </div>
             <div class="apartaments-card__box">
-              <a class="apartaments-card__link" href="#">
-                <svg class="apartaments-card__icon" width="20" height="20">
+              <a class="view-more" href="#">
+                <svg class="view-more__icon" width="20" height="20">
                   <use href="images/sprite.svg#icon-chevron"></use>
                 </svg>
                 View apartments
@@ -274,8 +277,8 @@
               </p>
             </div>
             <div class="apartaments-card__box">
-              <a class="apartaments-card__link" href="#">
-                <svg class="apartaments-card__icon" width="20" height="20">
+              <a class="view-more" href="#">
+                <svg class="view-more__icon" width="20" height="20">
                   <use href="images/sprite.svg#icon-chevron"></use>
                 </svg>
                 View apartments
@@ -306,8 +309,8 @@
               </p>
             </div>
             <div class="apartaments-card__box">
-              <a class="apartaments-card__link" href="#">
-                <svg class="apartaments-card__icon" width="20" height="20">
+              <a class="view-more" href="#">
+                <svg class="view-more__icon" width="20" height="20">
                   <use href="images/sprite.svg#icon-chevron"></use>
                 </svg>
                 View apartments
@@ -331,7 +334,7 @@
       <h2 class="mortgage__title title">
         Mortgage from our reliable partners
       </h2>
-      <a class="mortgage__link" href="#">
+      <a class="btn btn--dark" href="#">
         View all partners
       </a>
     </div>
@@ -462,10 +465,10 @@
           <span class="sr-only">monthly deposit</span>
         </label>
         <div class="calculator__buttons">
-          <button class="calculator__btn calculator__btn--submit" type="submit">
+          <button class="calculator__btn btn btn--lite" type="submit">
             Send an application
           </button>
-          <button class="calculator__btn calculator__btn--order" type="button">
+          <button class="calculator__btn btn btn--outline" type="button">
             Order a calculation
           </button>
         </div>
@@ -475,6 +478,241 @@
         loan
         agreement.
       </p>
+    </div>
+  </div>
+</section>
+    <section class="popular" id="popular">
+  <div class="container">
+    <div class="popular__top">
+      <h2 class="popular__title title">
+        Popular apartments
+      </h2>
+      <div class="popular__btns">
+        <button class="btn btn--dark-outline" type="button">For rent</button>
+        <button class="btn btn--dark" type="button">For the family</button>
+      </div>
+    </div>
+    <ul class="popular__content">
+      <li class="popular__item">
+        <article class="popular-card">
+          <div class="popular-card__top">
+            <p class="popular-card__remaining">
+              Remaining: 2 pieces
+            </p>
+            <img class="popular-card__img" src="images/popular/1.jpg" alt="Studios" width="246" height="240">
+          </div>
+          <div class="popular-card__content">
+            <div class="popular-card__box">
+              <h3 class="popular-card__title">Studios</h3>
+              <span class="popular-card__text">5-10 floor</span>
+            </div>
+            <div class="popular-card__box">
+              <span class="popular-card__area">42,15 m<sup>2</sup></span>
+              <span class="popular-card__balcony">8m<sup>2</sup> balcony</span>
+            </div>
+          </div>
+          <a class="view-more" href="#">
+            <svg class="view-more__icon" width="20" height="20">
+              <use href="images/sprite.svg#icon-chevron"></use>
+            </svg>
+            View planning
+          </a>
+        </article>
+      </li>
+      <li class="popular__item">
+        <article class="popular-card">
+          <div class="popular-card__top">
+            <p class="popular-card__remaining">
+              Remaining: 3 pieces
+            </p>
+            <img class="popular-card__img" src="images/popular/2.jpg" alt="Studios" width="246" height="240">
+          </div>
+          <div class="popular-card__content">
+            <div class="popular-card__box">
+              <h3 class="popular-card__title">1 room</h3>
+              <span class="popular-card__text">5-10 floor</span>
+            </div>
+            <div class="popular-card__box">
+              <span class="popular-card__area">51,25 m<sup>2</sup></span>
+              <span class="popular-card__balcony">8m<sup>2</sup> balcony</span>
+            </div>
+          </div>
+          <a class="view-more" href="#">
+            <svg class="view-more__icon" width="20" height="20">
+              <use href="images/sprite.svg#icon-chevron"></use>
+            </svg>
+            View planning
+          </a>
+        </article>
+      </li>
+      <li class="popular__item">
+        <article class="popular-card">
+          <div class="popular-card__top">
+            <p class="popular-card__remaining">
+              Remaining: 2 pieces
+            </p>
+            <img class="popular-card__img" src="images/popular/3.jpg" alt="Studios" width="246" height="240">
+          </div>
+          <div class="popular-card__content">
+            <div class="popular-card__box">
+              <h3 class="popular-card__title">2 rooms</h3>
+              <span class="popular-card__text">5-10 floor</span>
+            </div>
+            <div class="popular-card__box">
+              <span class="popular-card__area">62,11 m<sup>2</sup></span>
+              <span class="popular-card__balcony">8m<sup>2</sup> balcony</span>
+            </div>
+          </div>
+          <a class="view-more" href="#">
+            <svg class="view-more__icon" width="20" height="20">
+              <use href="images/sprite.svg#icon-chevron"></use>
+            </svg>
+            View planning
+          </a>
+        </article>
+      </li>
+      <li class="popular__item">
+        <article class="popular-card">
+          <div class="popular-card__top">
+            <p class="popular-card__remaining">
+              Remaining: 2 pieces
+            </p>
+            <img class="popular-card__img" src="images/popular/4.jpg" alt="Studios" width="246" height="240">
+          </div>
+          <div class="popular-card__content">
+            <div class="popular-card__box">
+              <h3 class="popular-card__title">3 rooms</h3>
+              <span class="popular-card__text">5-10 floor</span>
+            </div>
+            <div class="popular-card__box">
+              <span class="popular-card__area">78,60 m<sup>2</sup></span>
+              <span class="popular-card__balcony">8m<sup>2</sup> balcony</span>
+            </div>
+          </div>
+          <a class="view-more" href="#">
+            <svg class="view-more__icon" width="20" height="20">
+              <use href="images/sprite.svg#icon-chevron"></use>
+            </svg>
+            View planning
+          </a>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="events" id="events">
+  <div class="container">
+    <div class="events__top">
+      <h2 class="events__title title">
+        In the course of events
+      </h2>
+      <div class="events__arrows">
+        <button class="events__arrow events__arrow--prev" type="button">
+          <svg class="events__arrow-icon events__arrow-icon--prev" width="20" height="20">
+            <use href="images/sprite.svg#icon-chevron"></use>
+          </svg>
+        </button>
+        <button class="events__arrow events__arrow--next" type="button">
+          <svg class="events__arrow-icon" width="20" height="20">
+            <use href="images/sprite.svg#icon-chevron"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="events__content swiper">
+      <ul class="events__list swiper-wrapper">
+        <li class="events__item swiper-slide">
+          <article class="advertisement" style="background-image: url('images/advertisement/1.jpg');">
+  <h3 class="advertisement__title">
+    The delivery of buildings of the 3rd phase in February 2023
+    is postponed to April2023 in connection with...
+  </h3>
+  <time class="advertisement__date" datetime="04.01.2023">04.01.2023</time>
+  <button class="advertisement__btn" type="button">
+    <svg class="advertisement__icon" width="9" height="18">
+      <use href="images/sprite.svg#icon-chevron"></use>
+    </svg>
+    More details
+  </button>
+</article>
+        </li>
+        <li class="events__item swiper-slide">
+          <article class="advertisement" style="background-image: url('images/advertisement/2.jpg');">
+  <h3 class="advertisement__title">
+    Huge discounts on housing! Get your apartment now.
+    You just need to bring the necessary documents and...
+  </h3>
+  <time class="advertisement__date" datetime="03.01.2023">03.01.2023</time>
+  <button class="advertisement__btn" type="button">
+    <svg class="advertisement__icon" width="9" height="18">
+      <use href="images/sprite.svg#icon-chevron"></use>
+    </svg>
+    More details
+  </button>
+</article>
+        </li>
+        <li class="events__item swiper-slide">
+          <article class="advertisement" style="background-image: url('images/advertisement/3.jpg');">
+  <h3 class="advertisement__title">
+    Huge discounts on housing! Get your apartment now.
+    Huge discounts on housing! Get your apartment now.
+  </h3>
+  <time class="advertisement__date" datetime="04.01.2023">04.01.2023</time>
+  <button class="advertisement__btn" type="button">
+    <svg class="advertisement__icon" width="9" height="18">
+      <use href="images/sprite.svg#icon-chevron"></use>
+    </svg>
+    More details
+  </button>
+</article>
+        </li>
+        <li class="events__item swiper-slide">
+          <article class="advertisement" style="background-image: url('images/advertisement/1.jpg');">
+  <h3 class="advertisement__title">
+    The delivery of buildings of the 3rd phase in February 2023
+    is postponed to April2023 in connection with...
+  </h3>
+  <time class="advertisement__date" datetime="04.01.2023">04.01.2023</time>
+  <button class="advertisement__btn" type="button">
+    <svg class="advertisement__icon" width="9" height="18">
+      <use href="images/sprite.svg#icon-chevron"></use>
+    </svg>
+    More details
+  </button>
+</article>
+        </li>
+        <li class="events__item swiper-slide">
+          <article class="advertisement" style="background-image: url('images/advertisement/2.jpg');">
+  <h3 class="advertisement__title">
+    Huge discounts on housing! Get your apartment now.
+    You just need to bring the necessary documents and...
+  </h3>
+  <time class="advertisement__date" datetime="03.01.2023">03.01.2023</time>
+  <button class="advertisement__btn" type="button">
+    <svg class="advertisement__icon" width="9" height="18">
+      <use href="images/sprite.svg#icon-chevron"></use>
+    </svg>
+    More details
+  </button>
+</article>
+        </li>
+        <li class="events__item swiper-slide">
+          <article class="advertisement" style="background-image: url('images/advertisement/3.jpg');">
+  <h3 class="advertisement__title">
+    Huge discounts on housing! Get your apartment now.
+    Huge discounts on housing! Get your apartment now.
+  </h3>
+  <time class="advertisement__date" datetime="04.01.2023">04.01.2023</time>
+  <button class="advertisement__btn" type="button">
+    <svg class="advertisement__icon" width="9" height="18">
+      <use href="images/sprite.svg#icon-chevron"></use>
+    </svg>
+    More details
+  </button>
+</article>
+        </li>
+      </ul>
+      <div class="pagination"></div>
     </div>
   </div>
 </section>

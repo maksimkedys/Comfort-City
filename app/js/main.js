@@ -77,7 +77,61 @@ $(function () {
     monthlyDeposit.prop("value", Math.trunc(monthlyDepositValue).toLocaleString() + " ₴");
   }
 
+  // SLIDER MOBILE
+  $(window).on("load resize", function () {
+    if ($(window).width() < 820) {
+      $(".apartaments__content:not(.slick-initialized)").slick({
+        arrows: false,
+        dots: true,
+        infinite: true,
+        speed: 100,
+        slidesToShow: 1
+      });
+    } else {
+      $(".apartaments__content.slick-initialized").slick("unslick");
+    }
+  });
+});
 
+new Swiper('.events__content', {
+  slidesPerView: 3,
+  spaceBetween: 50,
+  loop: true,
+
+  pagination: {
+    el: '.pagination',
+    clickable: true,
+    bulletElement: 'button',
+  },
+  navigation: {
+    prevEl: '.events__arrow--prev',
+    nextEl: '.events__arrow--next',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  mousewheel: {
+    invert: true,
+  },
+  breakpoints: {
+    1200: {
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    576: {
+      slidesPerView: 1,
+    },
+    300: {
+      slidesPerView: 1,
+    }
+  }
 });
 
 

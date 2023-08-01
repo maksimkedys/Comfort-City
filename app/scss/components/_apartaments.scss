@@ -35,9 +35,26 @@
     @include r($xl) {
       grid-template-columns: repeat(2, 1fr);
     }
-    @include r($md) {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 50px 25px;
+    @include r($lg) {
+      display: block;
+    }
+  }
+
+  .slick-dots {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    li {
+      width: 30px;
+      height: 30px;
+      background-color: $dark;
+      border-radius: 50%;
+      font-size: 0;
+    }
+    .slick-active {
+      background-color: $accent;
+      border: 2px solid $dark;
     }
   }
 }
@@ -50,7 +67,7 @@
   &__content {
     padding-top: 40px;
     @include r($md) {
-      padding-top: 20px;
+      padding: 20px 5px 0;
     }
   }
 
@@ -79,7 +96,7 @@
   &__desc {
     font-size: 16px;
     text-align: right;
-    @include r($lg) {
+    @include r(360) {
       display: none;
     }
   }
@@ -88,54 +105,5 @@
     display: block;
     color: #b5b5b5;
     font-size: 13px;
-  }
-  &__link {
-    padding: 10px 0 10px 55px;
-    position: relative;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    white-space: nowrap;
-    transition:
-      background-color 0.4s,
-      border-color 0.4s,
-      color 0.4s;
-
-    &::before {
-      content: "";
-      width: 40px;
-      height: 40px;
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: $dark;
-      border-radius: 50%;
-      transition: background-color 0.4s;
-    }
-    &:focus {
-      border-color: $dark;
-    }
-    &:hover {
-      background-color: $dark;
-      color: $lite;
-      .apartaments-card__icon {
-        fill: $dark;
-      }
-      &::before {
-        background-color: $lite;
-      }
-    }
-    &:active {
-      opacity: 0.7;
-    }
-  }
-  &__icon {
-    position: absolute;
-    left: 10px;
-    fill: $lite;
-    transition: fill 0.4s;
   }
 }
