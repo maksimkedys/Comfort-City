@@ -1,0 +1,80 @@
+.advertisement {
+  max-width: 450px;
+  width: 100%;
+  padding: 30px 12px 30px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__title {
+    margin-bottom: 20px;
+    color: $lite;
+    font-weight: 700;
+    @include r($lg) {
+      font-size: 16px;
+    }
+  }
+
+  &__date {
+    margin-bottom: 25px;
+    color: $lite;
+    font-size: 14px;
+  }
+
+  &__btn {
+    padding: 7px 0;
+    padding-left: 17px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: $lite;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.42px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition:
+      border-color 0.4s,
+      color 0.4s;
+    &::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $lite;
+      border-radius: 50%;
+      transition:
+        background-color 0.4s,
+        transform 0.4s;
+    }
+
+    &:focus {
+      border-color: $accent;
+    }
+    &:hover {
+      color: $accent;
+      &::before {
+        transform: scale(1.1);
+        background-color: $accent;
+      }
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__icon {
+    fill: $dark;
+    z-index: 2;
+    transition: fill 0.4s;
+  }
+}

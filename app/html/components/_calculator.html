@@ -1,0 +1,105 @@
+<section class="calculator" id="calculator">
+  <div class="container calculator__container">
+    <div class="calculator__top">
+      <h2 class="calculator__title title">
+        Mortgage calculator
+      </h2>
+      <p class="calculator__desc">
+        The more accurately you enter the data, the more likely it is that you will receive an application for a
+        subsidized
+        mortgage. This is very important and helps us to more accurately agree with the bank all the terms of the
+        agreement of
+        your mortgage application
+      </p>
+    </div>
+    <div class="calculator__content">
+      <div class="calculator__box">
+        <form class="calculator__form" action="#">
+          <p class="calculator__box-title">
+            Real estate value
+          </p>
+          <label class="calculator__label">
+            <input class="calculator__input calculator__input--real" type="text" value="0" name="Real estate value"
+              readonly>
+            <span class="sr-only">Real estate value</span>
+          </label>
+          <label class="calculator__label" for="ionRangeSlider"></label>
+          <input class="calculator__form-input" name="ionRangeSlider" value="0" type="text" data-min="0"
+            data-max="6000000" data-from="600000" data-to="1000" readonly>
+        </form>
+        <form class="calculator__check-form" action="#">
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+        </form>
+      </div>
+      <div class="calculator__box">
+        <form class="calculator__form" action="#">
+          <p class="calculator__box-title">
+            Initial deposit
+          </p>
+          <label class="calculator__label">
+            <input class="calculator__input calculator__input--deposit" type="text" value="0" name="Real estate value"
+              readonly>
+            <span class="sr-only">Initial deposit</span>
+          </label>
+          <label class="calculator__label" for="ionRangeSlider"></label>
+          <input class="calculator__input-deposit" name="ionRangeSlider" value="0" type="text" data-min="0"
+            data-max="6000000" data-from="600000" data-to="1000" readonly>
+        </form>
+        <form class="calculator__check-form" action="#">
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="calculator__deposit">
+      <form class="calculator__deposit-form" action="#">
+        <label class="calculator__deposit-label">
+          The size of the monthly deposit
+          <input class="calculator__deposit-input calculator__input" type="text" value="0" name="monthly deposit"
+            readonly>
+          <span class="sr-only">monthly deposit</span>
+        </label>
+        <div class="calculator__buttons">
+          <button class="calculator__btn calculator__btn--submit" type="submit">
+            Send an application
+          </button>
+          <button class="calculator__btn calculator__btn--order" type="button">
+            Order a calculation
+          </button>
+        </div>
+      </form>
+      <p class="calculator__text">
+        Please note that the calculation offered by the calculator may differ from the actual amount in the mortgage
+        loan
+        agreement.
+      </p>
+    </div>
+  </div>
+</section>

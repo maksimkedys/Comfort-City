@@ -1,0 +1,136 @@
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+
+  &__content {
+    max-width: 670px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    @include r($xl) {
+      padding-bottom: 200px;
+      margin: 0 auto;
+    }
+    @media (max-width: 1150px) and (orientation: landscape) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    color: $lite;
+    font-size: 64px;
+    font-weight: 700;
+    @include r($xl) {
+      text-align: center;
+    }
+    @include r($md) {
+      margin-bottom: 25px;
+      font-size: 50px;
+    }
+    @include r($sm) {
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+    @media (max-width: 1080px) and (orientation: landscape) {
+      font-size: 30px;
+    }
+  }
+
+  &__link {
+    width: fit-content;
+    position: relative;
+    padding-right: 25px;
+    color: $lite;
+    &:hover {
+      .hero__link-icon {
+        fill: $accent;
+      }
+    }
+    @include r($xl) {
+      margin: 0 auto;
+    }
+    @include r($sm) {
+      padding: 10px 25px;
+      font-size: 14px;
+    }
+  }
+
+  &__link-icon {
+    position: absolute;
+    right: 0;
+    fill: $lite;
+    transition: fill 0.4s;
+  }
+}
+
+.proposals {
+  padding-top: 160px;
+  max-width: 550px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+  background-color: #383838;
+  z-index: 1;
+  overflow: auto;
+  @include r($xl) {
+    padding-top: 0;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+    height: 240px;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    z-index: 3;
+    overflow: visible;
+
+    .advertisement {
+      position: relative;
+      top: -30%;
+      max-width: 50%;
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+  @include r($md) {
+    .advertisement {
+      max-width: 100%;
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+  @include r($sm) {
+    .advertisement {
+      top: -15%;
+    }
+  }
+  @include r(340) {
+    .advertisement {
+      top: 0;
+    }
+  }
+  @media (max-width: 1150px) and (orientation: landscape) {
+    display: none;
+    .advertisement {
+      display: none;
+    }
+  }
+}

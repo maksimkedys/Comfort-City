@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comfort City</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header" id="header">
+  <nav class="menu">
+    <a class="logo" href="body">
+      <img class="logo__img" src="images/logo.svg" alt="Logo">
+    </a>
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a class="menu__link link" href="#apartaments">Location</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link link" href="#calculator">Hypothec</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link link" href="#">Developer</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link link" href="#">Choose an apartment</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link link" href="#mortgage">Partners</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link link" href="#footer">Contacts</a>
+      </li>
+    </ul>
+    <ul class="menu__contacts">
+      <li class="menu__contacts-item">
+        <a class="menu__contacts-link link menu__contacts-link--tel" href="tel:+38(095) 151 77 62">
+          <svg class="menu__contacts-icon" width="20" height="20">
+            <use href="images/sprite.svg#icon-phone"></use>
+          </svg>
+          +38(095) 151 77 62
+        </a>
+      </li>
+      <li class="menu__contacts-item">
+        <a class="menu__contacts-link link menu__contacts-link--apartment" href="#apartaments">
+          Apartment selection
+          <svg class="menu__contacts-icon" width="9" height="18">
+            <use href="images/sprite.svg#icon-chevron"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <button class="burger" type="button">
+      <span class="burger__line"></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+  </nav>
+</header>
+  <main class="main">
+    <section class="hero" style="background-image: url('images/hero-bg.jpg');">
+  <div class="container">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Comfort City residential complex on Khreshchatyk
+      </h1>
+      <a class="hero__link link" href="#">
+        About the complex
+        <svg class="hero__link-icon" width="9" height="18">
+          <use href="images/sprite.svg#icon-chevron"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="proposals">
+    <article class="advertisement" style="background-image: url('images/advertisement/1.jpg');">
+  <p class="advertisement__title">
+    The delivery of buildings of the 3rd phase in February 2023 is postponed to April2023
+  </p>
+  <time class="advertisement__date" datetime="04.01.2023">04.01.2023</time>
+  <button class="advertisement__btn" type="button">
+    <svg class="advertisement__icon" width="9" height="18">
+      <use href="images/sprite.svg#icon-chevron"></use>
+    </svg>
+    More details
+  </button>
+</article>
+    <article class="advertisement" style="background-image: url('images/advertisement/2.jpg');">
+  <p class="advertisement__title">
+    Huge discounts on housing! Get your apartment now. You just need to bring the necessary documents and...
+  </p>
+  <time class="advertisement__date" datetime="03.01.2023">03.01.2023</time>
+  <button class="advertisement__btn" type="button">
+    <svg class="advertisement__icon" width="9" height="18">
+      <use href="images/sprite.svg#icon-chevron"></use>
+    </svg>
+    More details
+  </button>
+</article>
+    <article class="advertisement" style="background-image: url('images/advertisement/3.jpg');">
+  <p class="advertisement__title">
+    Huge discounts on housing! Get your apartment now. You just need to bring the necessary documents and...
+  </p>
+  <time class="advertisement__date" datetime="04.01.2023">04.01.2023</time>
+  <button class="advertisement__btn" type="button">
+    <svg class="advertisement__icon" width="9" height="18">
+      <use href="images/sprite.svg#icon-chevron"></use>
+    </svg>
+    More details
+  </button>
+</article>
+  </div>
+</section>
+    <section class="apartaments" id="apartaments">
+  <div class="container">
+    <div class="apartaments__top">
+      <h2 class="apartaments__title title">
+        Select a house
+      </h2>
+      <p class="apartaments__desc">
+        Our construction company has accumulated vast experience in the construction of luxury housing in Kyiv. We not
+        only
+        carefully select the area for development, but also review the history of the land plot.
+      </p>
+    </div>
+    <ul class="apartaments__content">
+      <li class="apartaments__item">
+        <article class="apartaments-card">
+          <img class="apartaments-card__img" src="images/apartaments/1.jpg" alt="Volynske s. 32" width="416"
+            height="420">
+          <div class="apartaments-card__content">
+            <div class="apartaments-card__box">
+              <h3 class="apartaments-card__title">
+                Volynske s. 32
+              </h3>
+              <p class="apartaments-card__desc">
+                II quarter of 2022
+                <span class="apartaments-card__turn">
+                  The first turn
+                </span>
+              </p>
+            </div>
+            <div class="apartaments-card__box">
+              <a class="apartaments-card__link" href="#">
+                <svg class="apartaments-card__icon" width="20" height="20">
+                  <use href="images/sprite.svg#icon-chevron"></use>
+                </svg>
+                View apartments
+              </a>
+              <p class="apartaments-card__desc">
+                IV quarter of 2023
+                <span class="apartaments-card__turn">
+                  The second turn
+                </span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="apartaments__item">
+        <article class="apartaments-card">
+          <img class="apartaments-card__img" src="images/apartaments/2.jpg" alt="Zelenogradsk pr. 4" width="416"
+            height="420">
+          <div class="apartaments-card__content">
+            <div class="apartaments-card__box">
+              <h3 class="apartaments-card__title">
+                Zelenogradsk pr. 4
+              </h3>
+              <p class="apartaments-card__desc">
+                I quarter of 2022
+                <span class="apartaments-card__turn">
+                  The first turn
+                </span>
+              </p>
+            </div>
+            <div class="apartaments-card__box">
+              <a class="apartaments-card__link" href="#">
+                <svg class="apartaments-card__icon" width="20" height="20">
+                  <use href="images/sprite.svg#icon-chevron"></use>
+                </svg>
+                View apartments
+              </a>
+              <p class="apartaments-card__desc">
+                IV quarter of 2023
+                <span class="apartaments-card__turn">
+                  The second turn
+                </span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="apartaments__item">
+        <article class="apartaments-card">
+          <img class="apartaments-card__img" src="images/apartaments/3.jpg" alt="Sumske s. 11" width="416" height="420">
+          <div class="apartaments-card__content">
+            <div class="apartaments-card__box">
+              <h3 class="apartaments-card__title">
+                Sumske s. 11
+              </h3>
+              <p class="apartaments-card__desc">
+                III quarter of 2022
+                <span class="apartaments-card__turn">
+                  The first turn
+                </span>
+              </p>
+            </div>
+            <div class="apartaments-card__box">
+              <a class="apartaments-card__link" href="#">
+                <svg class="apartaments-card__icon" width="20" height="20">
+                  <use href="images/sprite.svg#icon-chevron"></use>
+                </svg>
+                View apartments
+              </a>
+              <p class="apartaments-card__desc">
+                IV quarter of 2023
+                <span class="apartaments-card__turn">
+                  The second turn
+                </span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="apartaments__item">
+        <article class="apartaments-card">
+          <img class="apartaments-card__img" src="images/apartaments/4.jpg" alt="Volynske s. 12" width="416"
+            height="420">
+          <div class="apartaments-card__content">
+            <div class="apartaments-card__box">
+              <h3 class="apartaments-card__title">
+                Volynske s. 12
+              </h3>
+              <p class="apartaments-card__desc">
+                II quarter of 2022
+                <span class="apartaments-card__turn">
+                  The first turn
+                </span>
+              </p>
+            </div>
+            <div class="apartaments-card__box">
+              <a class="apartaments-card__link" href="#">
+                <svg class="apartaments-card__icon" width="20" height="20">
+                  <use href="images/sprite.svg#icon-chevron"></use>
+                </svg>
+                View apartments
+              </a>
+              <p class="apartaments-card__desc">
+                IV quarter of 2023
+                <span class="apartaments-card__turn">
+                  The second turn
+                </span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="apartaments__item">
+        <article class="apartaments-card">
+          <img class="apartaments-card__img" src="images/apartaments/5.jpg" alt="Dnipro pr. 17" width="416"
+            height="420">
+          <div class="apartaments-card__content">
+            <div class="apartaments-card__box">
+              <h3 class="apartaments-card__title">
+                Dnipro pr. 17
+              </h3>
+              <p class="apartaments-card__desc">
+                III quarter of 2022
+                <span class="apartaments-card__turn">
+                  The first turn
+                </span>
+              </p>
+            </div>
+            <div class="apartaments-card__box">
+              <a class="apartaments-card__link" href="#">
+                <svg class="apartaments-card__icon" width="20" height="20">
+                  <use href="images/sprite.svg#icon-chevron"></use>
+                </svg>
+                View apartments
+              </a>
+              <p class="apartaments-card__desc">
+                IV quarter of 2023
+                <span class="apartaments-card__turn">
+                  The second turn
+                </span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="apartaments__item">
+        <article class="apartaments-card">
+          <img class="apartaments-card__img" src="images/apartaments/6.jpg" alt="Lisove s. 67" width="416" height="420">
+          <div class="apartaments-card__content">
+            <div class="apartaments-card__box">
+              <h3 class="apartaments-card__title">
+                Lisove s. 67
+              </h3>
+              <p class="apartaments-card__desc">
+                I quarter of 2022
+                <span class="apartaments-card__turn">
+                  The first turn
+                </span>
+              </p>
+            </div>
+            <div class="apartaments-card__box">
+              <a class="apartaments-card__link" href="#">
+                <svg class="apartaments-card__icon" width="20" height="20">
+                  <use href="images/sprite.svg#icon-chevron"></use>
+                </svg>
+                View apartments
+              </a>
+              <p class="apartaments-card__desc">
+                IV quarter of 2023
+                <span class="apartaments-card__turn">
+                  The second turn
+                </span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="mortgage" id="mortgage">
+  <div class="container">
+    <div class="mortgage__top">
+      <h2 class="mortgage__title title">
+        Mortgage from our reliable partners
+      </h2>
+      <a class="mortgage__link" href="#">
+        View all partners
+      </a>
+    </div>
+    <div class="mortgage__content">
+      <div class="mortgage__box">
+        <p class="mortgage__desc">
+          Reliable partners are the key to successful completion of the case. You can issue a mortgage in the listed
+          banks. We
+          guarantee reliability and low interest rates.
+        </p>
+        <p class="mortgage__text">
+          To choose the right product, it is not enough to know its conditions. Every day we publish dozens of economic
+          news that
+          help to manage personal finances competently. With us, you can find out not only the exchange rate of world
+          currencies,
+          but also understand what will affect them in the near future. You will learn about fresh financial life hacks
+          from our
+          video project "Fintalk".
+        </p>
+        <p class="mortgage__text">
+          If your goal is to invest money profitably, you can choose a deposit or debit card with favorable terms from
+          us. For
+          those who are looking for more profitable options for investing money, we have created the "Investments"
+          section, where
+          you can choose stocks and bonds, as well as decide which broker to conduct business through.
+        </p>
+      </div>
+      <div class="mortgage__partners">
+        <img class="mortgage__partners-img" src="images/partners/1.jpg" alt="PrivatBank">
+        <img class="mortgage__partners-img" src="images/partners/2.jpg" alt="A">
+        <img class="mortgage__partners-img" src="images/partners/3.jpg" alt="MonoBank">
+        <img class="mortgage__partners-img" src="images/partners/4.jpg" alt="1+1">
+        <img class="mortgage__partners-img" src="images/partners/5.jpg" alt="UKRGASBANK">
+        <img class="mortgage__partners-img" src="images/partners/6.jpg" alt="RaifaizenBank">
+        <img class="mortgage__partners-img" src="images/partners/7.jpg" alt="The Ministry of Sport and Youth Affairs">
+        <img class="mortgage__partners-img" src="images/partners/8.jpg" alt="Novy Chanel">
+        <img class="mortgage__partners-img" src="images/partners/9.jpg" alt="Pumb">
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="calculator" id="calculator">
+  <div class="container calculator__container">
+    <div class="calculator__top">
+      <h2 class="calculator__title title">
+        Mortgage calculator
+      </h2>
+      <p class="calculator__desc">
+        The more accurately you enter the data, the more likely it is that you will receive an application for a
+        subsidized
+        mortgage. This is very important and helps us to more accurately agree with the bank all the terms of the
+        agreement of
+        your mortgage application
+      </p>
+    </div>
+    <div class="calculator__content">
+      <div class="calculator__box">
+        <form class="calculator__form" action="#">
+          <p class="calculator__box-title">
+            Real estate value
+          </p>
+          <label class="calculator__label">
+            <input class="calculator__input calculator__input--real" type="text" value="0" name="Real estate value"
+              readonly>
+            <span class="sr-only">Real estate value</span>
+          </label>
+          <label class="calculator__label" for="ionRangeSlider"></label>
+          <input class="calculator__form-input" name="ionRangeSlider" value="0" type="text" data-min="0"
+            data-max="6000000" data-from="600000" data-to="1000" readonly>
+        </form>
+        <form class="calculator__check-form" action="#">
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+        </form>
+      </div>
+      <div class="calculator__box">
+        <form class="calculator__form" action="#">
+          <p class="calculator__box-title">
+            Initial deposit
+          </p>
+          <label class="calculator__label">
+            <input class="calculator__input calculator__input--deposit" type="text" value="0" name="Real estate value"
+              readonly>
+            <span class="sr-only">Initial deposit</span>
+          </label>
+          <label class="calculator__label" for="ionRangeSlider"></label>
+          <input class="calculator__input-deposit" name="ionRangeSlider" value="0" type="text" data-min="0"
+            data-max="6000000" data-from="600000" data-to="1000" readonly>
+        </form>
+        <form class="calculator__check-form" action="#">
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+          <label class="calculator__check-label">
+            <input class="calculator__check-input sr-only" name="Real estate value" type="checkbox">
+            <span class="calculator__checkbox"></span>
+            Real estate value
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="calculator__deposit">
+      <form class="calculator__deposit-form" action="#">
+        <label class="calculator__deposit-label">
+          The size of the monthly deposit
+          <input class="calculator__deposit-input calculator__input" type="text" value="0" name="monthly deposit"
+            readonly>
+          <span class="sr-only">monthly deposit</span>
+        </label>
+        <div class="calculator__buttons">
+          <button class="calculator__btn calculator__btn--submit" type="submit">
+            Send an application
+          </button>
+          <button class="calculator__btn calculator__btn--order" type="button">
+            Order a calculation
+          </button>
+        </div>
+      </form>
+      <p class="calculator__text">
+        Please note that the calculation offered by the calculator may differ from the actual amount in the mortgage
+        loan
+        agreement.
+      </p>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__top">
+      <ul class="footer__list">
+        <li class="footer__title">
+          Apartments
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link link" href="#">
+            Studios
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link link" href="#">
+            1 room
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link link" href="#">
+            2 rooms
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link link" href="#">
+            3 rooms link
+          </a>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__title">
+          About the company
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link link" href="#">
+            Licenses and certificates
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link link" href="#">
+            Vacancies
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link link" href="#">
+            Our objects
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a class="footer__list-link link" href="#">
+            Contacts
+          </a>
+        </li>
+      </ul>
+      <div class="footer__networks">
+        <p class="footer__title">Social networks</p>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <sapn class="sr-only">Go to YouTube</sapn>
+              <svg class="footer__social-icon" width="20" height="20">
+                <use href="images/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <sapn class="sr-only">Go to FaceBook</sapn>
+              <svg class="footer__social-icon" width="20" height="20">
+                <use href="images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <sapn class="sr-only">Go to Behance</sapn>
+              <svg class="footer__social-icon" width="20" height="20">
+                <use href="images/sprite.svg#icon-behance"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <sapn class="sr-only">Go to Instagram</sapn>
+              <svg class="footer__social-icon" width="20" height="20">
+                <use href="images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__networks-box">
+          <p class="footer__networks-text">
+            Our site participates in the competition: "TOP-10 construction companies"
+          </p>
+          <svg class="footer__networks-icon" width="50" height="50">
+            <use href="images/sprite.svg#icon-awards"></use>
+          </svg>
+        </div>
+      </div>
+      <address class="footer__item">
+        <a class="footer__tel link" href="tel:+380(95) 151 77 62">
+          +380(95) 151 77 62
+        </a>
+        <p class="footer__address">
+          Kyiv, St. Khreshchatyk 49, office 40-45
+        </p>
+        <span class="footer__text">Mon-Fri from 9:00 a.m. to 7:00 p.m</span>
+        <span class="footer__text">Sat-Sun weekend</span>
+        <a class="footer__mail link" href="mailto:buildcore@gmail.com">
+          buildcore@gmail.com
+        </a>
+      </address>
+    </div>
+
+    <div class="footer__bottom">
+      <a class="logo" href="body">
+        <img class="logo__img" src="images/logo.svg" alt="Logo">
+      </a>
+      <p class="footer__copy">
+        (c) 2023. All rights reserved. Construction company No.1 Use of materials only with reference to the source
+      </p>
+      <a class="footer__policy link" href="#">Privacy Policy</a>
+      <span class="footer__bottom-text">Figma.info</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

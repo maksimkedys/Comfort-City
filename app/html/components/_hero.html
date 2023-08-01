@@ -1,0 +1,32 @@
+<section class="hero" style="background-image: url('images/hero-bg.jpg');">
+  <div class="container">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Comfort City residential complex on Khreshchatyk
+      </h1>
+      <a class="hero__link link" href="#">
+        About the complex
+        <svg class="hero__link-icon" width="9" height="18">
+          <use href="images/sprite.svg#icon-chevron"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="proposals">
+    @include('_advertisement-card.html', {
+    "url": "images/advertisement/1.jpg",
+    "title": "The delivery of buildings of the 3rd phase in February 2023 is postponed to April2023",
+    "date": "04.01.2023"
+    })
+    @include('_advertisement-card.html', {
+    "url": "images/advertisement/2.jpg",
+    "title": "Huge discounts on housing! Get your apartment now. You just need to bring the necessary documents and...",
+    "date": "03.01.2023"
+    })
+    @include('_advertisement-card.html', {
+    "url": "images/advertisement/3.jpg",
+    "title": "Huge discounts on housing! Get your apartment now. You just need to bring the necessary documents and...",
+    "date": "04.01.2023"
+    })
+  </div>
+</section>

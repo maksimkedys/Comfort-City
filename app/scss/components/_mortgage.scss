@@ -1,0 +1,96 @@
+.mortgage {
+  padding: 100px 0 120px;
+  background-color: $second-bg;
+  @include r($lg) {
+    padding: 80px 0 100px;
+  }
+  @include r($lg) {
+    padding: 50px 0;
+  }
+  &__top {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    @include r($lg) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__title,
+  &__box {
+    max-width: 530px;
+    @include r($lg) {
+      max-width: 100%;
+    }
+  }
+  &__link {
+    padding: 15px 25px;
+    color: $lite;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: $dark;
+    border: 2px solid transparent;
+    transition:
+      border-color 0.4s,
+      color 0.4s,
+      background-color 0.4s,
+      opacity 0.4s;
+
+    &:focus {
+      border-color: $accent;
+    }
+    &:hover {
+      background-color: transparent;
+      border-color: $dark;
+      color: $dark;
+    }
+    &:active {
+      opacity: 0.7;
+    }
+
+    @include r($sm) {
+      font-size: 14px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    @include r($xl) {
+      display: block;
+    }
+  }
+
+  &__box {
+    @include r($xl) {
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+  &__desc {
+    margin-bottom: 50px;
+    @include r($sm) {
+      margin-bottom: 30px;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__partners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  &__partners-img {
+    margin: 0 auto;
+  }
+}

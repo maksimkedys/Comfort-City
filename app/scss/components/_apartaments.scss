@@ -1,0 +1,141 @@
+.apartaments {
+  padding: 150px 0 120px;
+  @include r($lg) {
+    padding: 100px 0 80px;
+  }
+  @include r($md) {
+    padding: 50px 0;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    @include r($xl) {
+      display: block;
+    }
+    @include r($lg) {
+      margin-bottom: 50px;
+    }
+  }
+  &__desc {
+    max-width: 750px;
+    width: 100%;
+    padding-top: 10px;
+    @include r($sm) {
+      padding-top: 15px;
+      font-size: 16px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 25px;
+
+    @include r($xl) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include r($md) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 50px 25px;
+    }
+  }
+}
+
+.apartaments-card {
+  max-width: 416px;
+  @include r($xl) {
+    margin: 0 auto;
+  }
+  &__content {
+    padding-top: 40px;
+    @include r($md) {
+      padding-top: 20px;
+    }
+  }
+
+  &__img {
+    border-radius: 10px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+    &:first-child {
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  &__desc {
+    font-size: 16px;
+    text-align: right;
+    @include r($lg) {
+      display: none;
+    }
+  }
+  &__turn {
+    margin-top: 4px;
+    display: block;
+    color: #b5b5b5;
+    font-size: 13px;
+  }
+  &__link {
+    padding: 10px 0 10px 55px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition:
+      background-color 0.4s,
+      border-color 0.4s,
+      color 0.4s;
+
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $dark;
+      border-radius: 50%;
+      transition: background-color 0.4s;
+    }
+    &:focus {
+      border-color: $dark;
+    }
+    &:hover {
+      background-color: $dark;
+      color: $lite;
+      .apartaments-card__icon {
+        fill: $dark;
+      }
+      &::before {
+        background-color: $lite;
+      }
+    }
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  &__icon {
+    position: absolute;
+    left: 10px;
+    fill: $lite;
+    transition: fill 0.4s;
+  }
+}

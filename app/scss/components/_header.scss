@@ -1,0 +1,192 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 6;
+  transition: background-color 0.4s;
+  &.scroll {
+    background-color: rgba($dark, 0.7);
+  }
+}
+
+.menu {
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  border-bottom: 1px solid $lite;
+
+  @include r($sm) {
+    padding: 6px 15px;
+    .logo {
+      width: 50px;
+    }
+  }
+  @media (max-width: 1080px) and (orientation: landscape) {
+    padding: 6px 15px;
+    .logo {
+      width: 50px;
+    }
+  }
+
+  &__list {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @include r($xxl) {
+      gap: 30px;
+    }
+
+    @include r($xxl) {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $dark;
+      gap: 25px;
+      z-index: 5;
+      opacity: 0;
+      visibility: hidden;
+      transition:
+        opacity 0.6s,
+        visibility 0.6s;
+      &--active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    @media (max-width: 1080px) and (orientation: landscape) {
+      overflow-y: scroll;
+      justify-content: flex-start;
+      padding-top: 45px;
+      gap: 5px;
+    }
+  }
+
+  &__item {
+    @include r($xxl) {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    color: $lite;
+    @include r($xxl) {
+      font-size: 22px;
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: 15px 0;
+      transition: background-color 0.4s;
+    }
+    @include r($md) {
+      padding: 10px 0;
+      font-size: 18px;
+    }
+  }
+
+  &__contacts {
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    z-index: 6;
+
+    @include r($xxl) {
+      gap: 30px;
+      padding: 0 15px;
+    }
+    @include r($md) {
+      display: none;
+    }
+  }
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $lite;
+    transition:
+      background-color 0.4s,
+      color 0.4s;
+
+    &:hover {
+      .menu__contacts-icon {
+        fill: $accent;
+      }
+    }
+
+    @include r($xxl) {
+      padding: 10px 20px;
+    }
+
+    @media (max-width: 1080px) and (orientation: landscape) {
+      font-size: 14px;
+    }
+
+    &--tel {
+      font-size: 18px;
+      .menu__contacts-icon {
+        display: none;
+      }
+      @include r($xxl) {
+        background-color: $lite;
+        color: $dark;
+        .menu__contacts-icon {
+          display: block;
+          fill: $dark;
+        }
+        @media (max-width: 1080px) and (orientation: landscape) {
+          font-size: 14px;
+        }
+
+        &:focus {
+          background-color: $dark;
+          color: $lite;
+          .menu__contacts-icon {
+            fill: $lite;
+          }
+        }
+        &:hover {
+          background-color: $dark;
+        }
+      }
+    }
+    &--apartment {
+      @include r($xxl) {
+        font-size: 18px;
+        background-color: $dark;
+        .menu__contacts-icon {
+          display: none;
+        }
+      }
+      @media (max-width: 1080px) and (orientation: landscape) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__contacts-icon {
+    fill: $lite;
+    transition: fill 0.4s;
+  }
+}
+
+.burger {
+  @include burger(40px, 25px, 2px, $lite);
+  display: none;
+  z-index: 6;
+  @include r($xxl) {
+    display: block;
+  }
+  &--active {
+    overflow: hidden;
+  }
+}

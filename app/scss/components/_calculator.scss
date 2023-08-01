@@ -1,0 +1,260 @@
+.calculator {
+  padding: 120px 0 140px;
+  @include r($xl) {
+    padding: 0;
+  }
+
+  &__container {
+    padding: 90px 120px 95px;
+    background-color: $dark;
+    color: $lite;
+    @include r($lg) {
+      padding: 50px 40px;
+    }
+    @include r($md) {
+      padding: 50px 15px;
+    }
+  }
+  &__top {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include r($xl) {
+      gap: 30px;
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__title {
+    max-width: 300px;
+    color: $lite;
+    @include r($xl) {
+      max-width: 100%;
+    }
+  }
+  &__desc {
+    max-width: 605px;
+  }
+
+  &__content {
+    margin-bottom: 50px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &__box {
+    display: flex;
+    gap: 80px;
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+    @include r($lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__box-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__input {
+    max-width: 510px;
+    width: 100%;
+    font-size: 48px;
+    font-weight: 700;
+    color: $lite;
+  }
+
+  &__check-label {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    white-space: nowrap;
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+  &__check-input {
+    &:checked + .calculator__checkbox {
+      border-color: $lite;
+      &::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        background-color: $lite;
+      }
+    }
+  }
+
+  &__checkbox {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid #fff;
+  }
+
+  &__deposit-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include r($xl) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 50px;
+    }
+  }
+
+  &__deposit-label {
+    display: block;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  &__deposit-input {
+    margin-top: 30px;
+    max-width: 400px;
+    display: block;
+  }
+
+  &__buttons {
+    margin-bottom: 35px;
+    display: flex;
+    gap: 35px;
+    @include r($sm) {
+      flex-direction: column;
+    }
+  }
+  &__btn {
+    padding: 15px 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    letter-spacing: 1.26px;
+    text-transform: uppercase;
+    transition:
+      border-color 0.4s,
+      outline 0.4s,
+      color 0.4s,
+      background-color 0.4s,
+      opacity 0.4s;
+
+    @include r($md) {
+      font-size: 14px;
+    }
+
+    &--submit {
+      background-color: $lite;
+      color: $dark;
+      &:focus {
+        outline: 2px solid $accent;
+      }
+      &:hover {
+        outline: 2px solid $accent;
+        color: $accent;
+        background-color: $dark;
+      }
+      &:active {
+        opacity: 0.7;
+      }
+    }
+    &--order {
+      color: $lite;
+      border: 2px solid $lite;
+      &:focus {
+        border-color: $accent;
+      }
+      &:hover {
+        border-color: $accent;
+        color: $accent;
+      }
+      &:active {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__text {
+    margin-left: auto;
+    max-width: 630px;
+    width: 100%;
+    font-size: 14px;
+    opacity: 0.5;
+    @include r($xl) {
+      margin-left: 0;
+    }
+  }
+}
+
+.irs {
+  max-width: 532px;
+  @include r($lg) {
+    max-width: 100%;
+  }
+}
+
+.irs-with-grid .irs-grid,
+.irs-single {
+  display: none;
+}
+
+.irs--round .irs-min,
+.irs--round .irs-max {
+  color: $lite;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.45;
+  top: 50px;
+  padding: 3px 5px;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.irs--round .irs-handle {
+  top: 26px;
+  width: 24px;
+  height: 24px;
+  border: 3px solid $lite;
+  background-color: $dark;
+  border-radius: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 255, 0.3);
+}
+
+.irs--round .irs-handle.state_hover,
+.irs--round .irs-handle:hover {
+  background-color: $dark;
+}
+
+.irs--round .irs-bar--single {
+  border-radius: 10px 0 0 10px;
+}
+
+.irs--round .irs-bar {
+  top: 36px;
+  height: 4px;
+  background-color: $lite;
+}
+
+.irs--round .irs-line {
+  top: 36px;
+  height: 4px;
+  background-color: $lite;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+span.irs-min,
+span.irs-max {
+  visibility: visible !important;
+}
