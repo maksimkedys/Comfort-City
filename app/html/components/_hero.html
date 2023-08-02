@@ -12,24 +12,30 @@
       </a>
     </div>
   </div>
-  <div class="proposals">
-    @include('_advertisement-card.html', {
-    "url": "images/advertisement/1.jpg",
-    "title1": "The delivery of buildings of the 3rd phase in February 2023",
-    "title2": "is postponed to April2023 in connection with...",
-    "date": "04.01.2023"
-    })
-    @include('_advertisement-card.html', {
-    "url": "images/advertisement/2.jpg",
-    "title1": "Huge discounts on housing! Get your apartment now.",
-    "title2": "You just need to bring the necessary documents and...",
-    "date": "03.01.2023"
-    })
-    @include('_advertisement-card.html', {
-    "url": "images/advertisement/3.jpg",
-    "title1": "Huge discounts on housing! Get your apartment now.",
-    "title2": "Huge discounts on housing! Get your apartment now.",
-    "date": "04.01.2023"
-    })
-  </div>
+  <ul class="proposals">
+    <li class="proposals__item">
+      @include('_advertisement-card.html', {
+      "url": "images/advertisement/1.jpg",
+      "title1": "The delivery of buildings of the 3rd phase in February 2023",
+      "title2": "is postponed to April2023 in connection with...",
+      "date": "04.01.2023"
+      })
+    </li>
+    <li class="proposals__item">
+      @include('_advertisement-card.html', {
+      "url": "images/advertisement/2.jpg",
+      "title1": "Huge discounts on housing! Get your apartment now.",
+      "title2": "You just need to bring the necessary documents and...",
+      "date": "03.01.2023"
+      })
+    </li>
+    <li class="proposals__item">
+      @include('_advertisement-card.html', {
+      "url": "images/advertisement/3.jpg",
+      "title1": "Huge discounts on housing! Get your apartment now.",
+      "title2": "Huge discounts on housing! Get your apartment now.",
+      "date": "04.01.2023"
+      })
+    </li>
+  </ul>
 </section>

@@ -27,8 +27,26 @@
     height: 40px;
     position: relative;
     background-color: $dark;
+    border: 2px solid transparent;
     border-radius: 50%;
-    @include r($sm) {
+    transition:
+      border-color 0.4s,
+      opacity 0.4s;
+
+    &:focus {
+      border-color: $accent;
+    }
+    &:hover {
+      border-color: $accent;
+      .events__arrow-icon {
+        fill: $accent;
+      }
+    }
+    &:active {
+      opacity: 0.7;
+    }
+
+    @include r($md) {
       display: none;
     }
   }
@@ -38,18 +56,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     fill: $lite;
+    transition: fill 0.4s;
     &--prev {
       transform: translate(-50%, -50%) rotate(180deg);
     }
   }
   &__item {
-    height: 273px;
+    min-height: 273px;
     box-sizing: border-box;
   }
-  .advertisement {
-    max-width: 415px;
-    width: fit-content;
-    height: 100%;
+  .event {
     margin: 0 auto;
   }
 
@@ -59,7 +75,7 @@
     gap: 15px;
     display: none;
 
-    @include r($sm) {
+    @include r($md) {
       display: flex;
     }
   }

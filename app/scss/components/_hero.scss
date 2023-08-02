@@ -86,6 +86,20 @@
   background-color: #383838;
   z-index: 1;
   overflow: auto;
+
+  &__item {
+    @include r($xl) {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+    @include r($md) {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
   @include r($xl) {
     padding-top: 0;
     top: auto;
@@ -103,20 +117,14 @@
     .advertisement {
       position: relative;
       top: -30%;
-      max-width: 50%;
-      &:nth-child(3) {
-        display: none;
-      }
     }
   }
   @include r($md) {
     .advertisement {
       max-width: 100%;
-      &:nth-child(2) {
-        display: none;
-      }
     }
   }
+
   @include r($sm) {
     .advertisement {
       top: -15%;

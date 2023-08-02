@@ -18,6 +18,10 @@ body {
   flex-direction: column;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .main {
   flex-grow: 1;
 }

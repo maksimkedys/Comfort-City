@@ -1,10 +1,12 @@
 $(function () {
   const burger = document.querySelector('.burger');
   const menu = document.querySelector('.menu__list');
+  const body = document.querySelector('.body')
 
   function burgerMenu() {
     burger.classList.toggle("burger--active");
     menu.classList.toggle("menu__list--active");
+    body.classList.toggle("lock");
   }
 
   burger.addEventListener('click', burgerMenu);
@@ -94,8 +96,6 @@ $(function () {
 });
 
 new Swiper('.events__content', {
-  slidesPerView: 3,
-  spaceBetween: 50,
   loop: true,
 
   pagination: {
@@ -116,6 +116,7 @@ new Swiper('.events__content', {
   },
   breakpoints: {
     1200: {
+      slidesPerView: 3,
       spaceBetween: 30,
     },
     992: {
