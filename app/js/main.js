@@ -11,7 +11,16 @@ $(function () {
 
   burger.addEventListener('click', burgerMenu);
 
-  $(".menu__link").on('click', burgerMenu)
+  $(window).on("load resize", function () {
+    if ($(window).width() < 1601) {
+      $(".menu__link").on('click', burgerMenu);
+    } else {
+      $(".menu__link").on('click', function () {
+        burger.classList.toggle("burger--active");
+        menu.classList.toggle("menu__list--active");
+      });
+    }
+  });
 
   $(".menu__link, .logo, .menu__contacts-link--apartment").on("click", function (event) {
     event.preventDefault();
@@ -93,47 +102,45 @@ $(function () {
       $(".apartaments__content.slick-initialized").slick("unslick");
     }
   });
-});
 
-new Swiper('.events__content', {
-  loop: true,
+  new Swiper('.events__content', {
+    loop: true,
 
-  pagination: {
-    el: '.pagination',
-    clickable: true,
-    bulletElement: 'button',
-  },
-  navigation: {
-    prevEl: '.events__arrow--prev',
-    nextEl: '.events__arrow--next',
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-  mousewheel: {
-    invert: true,
-  },
-  breakpoints: {
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+    pagination: {
+      el: '.pagination',
+      clickable: true,
+      bulletElement: 'button',
     },
-    992: {
-      slidesPerView: 2,
-      spaceBetween: 15,
+    navigation: {
+      prevEl: '.events__arrow--prev',
+      nextEl: '.events__arrow--next',
     },
-    768: {
-      slidesPerView: 2,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
     },
-    576: {
-      slidesPerView: 1,
+    mousewheel: {
+      invert: true,
     },
-    300: {
-      slidesPerView: 1,
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      300: {
+        slidesPerView: 1,
+      }
     }
-  }
+  });
+
 });
-
-
-
